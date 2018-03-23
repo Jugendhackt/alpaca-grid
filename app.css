@@ -1,0 +1,40 @@
+body {
+    margin: 10px;
+    overflow: hidden;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    transform: rotateZ(25deg) rotateX(40deg);
+}
+
+.cell {
+    background-color: #e3e3e3;
+    transition: transform 0.05s ease-in-out;
+    border: 1px solid white;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 0;
+}
+
+.cell.alpaca-color-head {
+    background-color: #34a3e3;
+}
+
+.cell.alpaca-color-face {
+    background-color: #000000;
+}
+
+.cell.active {
+    background-color: #454545;
+    transform: translateY(-20px) translateX(-10px);
+}
+
+.cell:hover {
+    transform: rotateZ(-20deg) scale(1.5);
+}
